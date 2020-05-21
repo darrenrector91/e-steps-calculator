@@ -21,6 +21,7 @@ body {
 
 .inputWrapper {
   background-color: #243949;
+  border: 0.5px solid rgb(197, 197, 25);
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
