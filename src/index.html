@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" href="./vendors/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <title>E-Steps Calculator</title>
+
+  <body>
+    <div class="container">
+      <!-- <div class="row titleWrapper">
+        <h1 id="title">e-Steps Calculator</h1>
+      </div> -->
+      <div class="inputWrapper">
+        <div class="row">
+          <div class="col-8">
+            <label for="current-esteps">Current E-Steps</label>
+            <input type="text" class="current-steps" id="current-esteps-input" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <label for="measured-amount">Measured Amount</label>
+            <input
+              type="text"
+              class="measured-amount"
+              id="measured-amount-input"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <label for="actual-amount">Actual Amount</label>
+            <input type="text" class="actual-amount" id="actual-amount-input" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <button
+              class="btn btn-info"
+              id="calculateBtn"
+            >
+              Calculate
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8" id="results">
+            <label for="new-esteps-amount">New E-Steps Amount</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <input
+              type="text"
+              class="new-esteps-amount"
+              id="new-esteps-amount-input"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./vendors/jquery.js"></script>
+    <script src="./renderer.js"></script>
+    <script src="./vendors/bootstrap.bundle.js"></script>
+   
+  </body>
+</html>
